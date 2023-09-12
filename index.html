@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/colorbox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="icon" href="img/favicon.png">
+    <script src="JS/jquery-3.7.0.min.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/jquery.colorbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+                <h1><a href="#main">PORTFOLIO</a></h1>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#main">Main</a></li>
+                        <li><a href="#profile">About Me</a></li>
+                        <li><a href="#Design">Design</a></li>
+                        <li><a href="#web">Web</a></li>
+                        <li><a href="#slide">FlipBook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main" class="page">
+            <div class="container">
+                <!-- <video src="img/main.mp4" muted="" autoplay="" loop=""></video> -->
+                <p class="typewriter">Anyone can be anything.</p>
+            </div>
+        </div>
+        <div id="profile" class="page">
+            <div class="container">
+                    <h4 class="about_me"><a href="#"><img src="img/aboutme.png" alt="about_me"></a></h4>
+                    <p class="info"><img src="img/인포그래픽_자기소개서2.png" alt="info"></p>
+            </div>
+        </div>
+        <div id="content" class="page">
+            <div class="container">
+                <div class="Design" id="Design">
+                        <div class="title">
+                            <h4><img src="img/design.png" alt="design"></h4>
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="img/martposter.png" class="gallery"><img src="img/martposter.png" alt="martposter"></a></div>
+                            <div class="swiper-slide"><a href="img/movie.jpg" class="gallery"><img src="img/movie.jpg" alt="movie"></a></div>
+                            <div class="swiper-slide"><a href="img/event.jpg" class="gallery"><img src="img/event.jpg" alt="poster"></a></div>
+                            <div class="swiper-slide"><a href="img/changeup_mo.png" class="gallery"><img src="img/changeup.jpg" alt="cd1"></a></div>
+                            <div class="swiper-slide"><a href="img/view_mo.png" class="gallery"><img src="img/view.png" alt="cd2"></a></div>
+                            <div class="swiper-slide"><a href="img/jeju.png" class="gallery"><img src="img/jeju.png" alt="jejuposter"></a></div>
+                            <div class="swiper-slide"><a href="img/banner.png" class="gallery"><img src="img/banner.png" alt="banner"></a></div>
+                            <div class="swiper-slide"><a href="img/hansot.png" class="gallery"><img src="img/hansot_mo.png" alt="hansot"></a></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                </div>
+            </div>
+    </div>
+    <div id="web" class="page">
+        <div class="container">
+        <h4><img src="img/web.png" alt="web"></h4>
+        <!-- 탭메뉴 -->
+        <div class="tab_menu">
+            <div class="tab_btn">
+                <ul>
+                    <li class="on"><a href="#">FARRAGAMO</a></li>
+                    <li><a href="#">파리바게트</a></li>
+                    <li><a href="#">현대카드</a></li>
+                    <li><a href="#">FIGMA</a></li>
+                </ul>
+            </div>
+            <div class="tab_cont">
+                <div class="web FARRAGAMO">
+                    <div class="left">
+                        <p><img src="img/FARRAGAMO.png" alt="FARRAGAMO"></p>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><p><span>사이트명</span>FARRAGAMO</p></li>
+                            <li><p><span>프로젝트 참여도</span>100%(1인 프로젝트)</p></li>
+                            <li><p><span>TOOL</span>html / css / javascript / photoshop / Swiper Js / jquery</p></li>
+                        </ul>
+
+                        <div class="btn_g">
+                            <a href="FARRAGAMO/index.html" target="_blank" class="btn">Web Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="web paris">
+                    <div class="left">
+                        <p><img src="img/paris.png" alt="paris"></p>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><p><span>사이트명</span>파리바게트</p></li>
+                            <li><p><span>프로젝트 참여도</span>100%(반응형 웹)</p></li>
+                            <li><p><span>TOOL</span> html / css / javascript / photoshop / Swiper Js/ jquery</p></li>
+                        </ul>
+
+                        <div class="btn_g">
+                            <a href="paris/index.html" target="_blank" class="btn">Web Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="web hyundai">
+                    <div class="left">
+                        <p><img src="img/hyundai.png" alt="hyundai"></p>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><p><span>사이트명</span>현대카드</p></li>
+                            <li><p><span>프로젝트 참여도</span>100%(Clone Coading)</p></li>
+                            <li><p><span>TOOL</span> html / css / javascript / photoshop / Swiper Js/ jquery</p></li>
+                        </ul>
+
+                        <div class="btn_g">
+                            <a href="hyundai/index3.html" target="_blank" class="btn">Web Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="web figma">
+                    <div class="left">
+                        <p><img src="img/figma.png" alt="figma"></p>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><p><span>사이트명</span>피그마</p></li>
+                            <li><p><span>프로젝트 참여도</span>100%(1인 프로젝트)</p></li>
+                            <li><p><span>TOOL</span> Figma </p></li>
+                        </ul>
+
+                        <div class="btn_g">
+                            <a href="https://www.figma.com/file/jcKXbCa4MEAcpAe2d8snhs/16_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?type=design&node-id=1%3A2&mode=design&t=6FxWcYmdIOrLyNkZ-1" target="_blank" class="btn">figma</a>
+                            <a href="https://www.figma.com/proto/jcKXbCa4MEAcpAe2d8snhs/16_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?page-id=1%3A2&type=design&node-id=2-39&viewport=657%2C367%2C0.57&t=3xfQvYYdtOmZQfbC-1&scaling=scale-down&starting-point-node-id=2%3A39&mode=design" target="_blank" class="btn">prototype</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    </div>
+    <div id="slide" class="page">
+        <div class="container">
+            <h4><img src="img/flipbook.png" alt="web"></h4>
+            <div class="iframe">
+                <iframe src="slide/index.html" frameborder="0"></iframe>
+            </div>                
+        </div>
+    </div>
+</div>
+</body>
+</html>
