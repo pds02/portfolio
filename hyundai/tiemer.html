@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       // 3분(180초)을 나타내는 변수
+var duration = 180;
+
+// 시작 시간을 현재 시간으로 설정
+var startTime = new Date().getTime();
+
+// 시계 업데이트 함수
+function updateClock() {
+  // 현재 시간을 가져옴
+  var currentTime = new Date().getTime();
+
+  // 경과 시간을 계산
+  var elapsedTime = Math.floor((currentTime - startTime) / 1000);
+
+  // 남은 시간을 계산
+  var remainingTime = duration - elapsedTime;
+
+  // 남은 시간이 0보다 크거나 같을 경우 시, 분, 초를 계산
+  if (remainingTime >= 0) {
+    var minutes = Math.floor(remainingTime / 60);
+    var seconds = remainingTime % 60;
+
+    // 시, 분, 초를 2자리 숫자 형식으로 변환
+    var formattedMinutes = ("0" + minutes).slice(-2);
+    var formattedSeconds = ("0" + seconds).slice(-2);
+
+    // 시계 표시 엘리먼트를 찾음 (예: <span id="clock"></span>)
+    var clockElement = document.getElementById("clock");
+
+    // 시계를 업데이트
+    clockElement.innerHTML = formattedMinutes + ":" + formattedSeconds;
+  } else {
+    // 3분이 지난 경우 시계를 멈춤
+    clearInterval(clockInterval);
+    document.getElementById('clock_des').innerHTML='세션이 지났습니다. 새로고침하시오'
+  }
+}
+
+// 1초마다 시계 업데이트 함수를 호출하여 시계를 업데이트
+var clockInterval = setInterval(updateClock, 1000);
+
+    </script>
+</head>
+
+<body>
+    <div id="clock"></div>
+    <p id="clock_des"></p>
+</body>
+</html>

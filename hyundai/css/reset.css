@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* reset */
+body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,
+table,tr,th,td,
+form, fieldset, legend, input, label, select, textarea, button,
+header,footer, nav,aside, main, section,article,
+a, span, strong,em{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6{
+    font-family: "hcR","돋움",dotum, sans-serif;
+    font-size: 12px;
+    color:#000;
+    line-height: 1;
+}
+a{
+    text-decoration: none;
+    color:#000;
+    
+}
+ul,ol, li{
+    list-style: none;
+}
+img,fieldset{
+    border: none;
+    vertical-align: middle;
+}
+strong, em, address{
+    font-weight: normal;
+    font-style: normal;
+}
+table{
+    border-collapse: collapse;
+}
+button{
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* font */
+@font-face{
+    font-family:"hcR";
+    src:url(../font/regular.woff);
+    
+}
+@font-face{
+    font-family:"hcT";
+    src:url(../font/title.woff);
+    
+}
+
+/* common */
+.hide{display: none;}
+.blind{
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.clearfix:after{    
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

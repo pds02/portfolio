@@ -1,0 +1,352 @@
+@charset "utf-8";
+
+html,body{
+    height: 2000px;
+}
+/* 레이아웃 */
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+#header {
+    min-height: 130px;
+}
+.header {
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 1400px;
+    min-height: 80px;
+    padding: 0 24px 0 0;
+    box-shadow: 0 2px 4px 0 rgba(0 0 0 / 8%);
+    background: #fff;
+}
+#container {
+    background-color: aqua;
+}
+.content {
+    display: flex;
+    width: 1600px;
+    margin: 0 auto;
+}
+.content .left_col {
+    width: 1256px;
+    padding: 60px 38px 160px 0;
+    margin: 0;
+    background-color: bisque;
+}
+.content .right_col {
+    width: 343px;
+    padding: 64px 0 160px 64px;
+    border-left:1px solid #ccc;
+    background-color: rgb(233, 193, 144);
+}
+
+/* 로고 */
+.header h1 {
+    float: left;
+    width: 218px;
+    height: 80px;
+    background: url(../img/logo_hyundaicard_scr.svg) no-repeat center;
+    box-sizing: 138px 28px;
+    transition:  all 0.2s cubic-bezier(.22,.61,.36,1);
+}
+.header h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 주메뉴 */
+.list_dep2 {}
+.list_dep2 > li {
+    float: left;
+    height: 100%;
+    border-bottom: 2px solid transparent;
+}
+.list_dep2 > li > a{
+    display: block;
+    padding: 27px 20px 25px;
+    font-size: 18px;
+    font-family:'hcT';
+    line-height: 26px;
+    transition: all 0.25s cubic-bezier(.22,.61,.36,1);
+}
+.list_dep2 > li.active {
+    border-bottom: 2px solid #000;
+}
+/* 애플메뉴 */
+.list_dep2 > li:last-child a {
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.list_dep2 > li:last-child {
+    position: relative;
+}
+.list_dep2 > li:last-child::before {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background-color: #ddd;
+    position: absolute;
+    left:0;
+    top: 30px;
+}
+
+/* 3dep 메뉴 레이아웃 */
+.box_bg {
+    position: fixed;
+    top:80px;
+    left:0;
+    z-index: 40;
+    width: 100%;
+    height: 400px;
+    border-top: 1px solid #ebebeb;
+    box-shadow: 0 4px 14px -8px rgba(0,0,0,0.12);
+    background: #fff;
+
+}
+.box_dep3_in {
+    width: 1200px;
+    margin: 24px auto;
+    display: flex;
+}
+.box_dep3_in .box_dep3_left {
+    float: left;
+    width: 874px;
+    min-height: 374px;
+}
+.box_dep3_in .box_dep3_right {
+    float: right;
+    width: 326px;
+    min-height: 340px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: start;
+    padding-bottom: 8px;
+    padding-left: 44px;
+    border-left: 1px solid #d6d6d6;
+}
+
+/* 주메뉴 오른쪽 기타메뉴 */
+.box_etc {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 20px 0;
+}
+.box_etc .list_etc {margin-right: 13px;}
+.box_etc .list_etc li  {float: left;}
+.box_etc .list_etc li a {
+    display: block;
+    padding: 2px 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color:#5c5c5c;
+    font-weight: 400;
+}
+/* 세번째 li에 bar추가 */
+.box_etc .list_etc li.bar {
+    position: relative;
+    padding-right: 8px;
+    margin-right: 9px;
+}
+.box_etc .list_etc li.bar::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+    width: 1px;
+    height: 12px;
+    background: #e0e0e0;
+}
+/* 검색메뉴 */
+.box_etc .input_cell_box {
+    float: left;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+.box_etc .input_cell_box a {
+    height: 100%;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(0,0,0,0.48);
+    position: relative;
+
+}
+.box_etc .input_cell_box a::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    background: url(../img/searchB.png) no-repeat 0% 50%;
+    background-size: 28px 28px;
+    opacity: 0.4;
+    transform: translateY(-50%);
+}
+
+/* 3dep 왼쪽메뉴 */
+.list_dep3 {
+    margin-top: 12px;
+    margin-bottom: 32px;
+    float: left;
+    width: 204px;
+}
+.list_dep3 p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.list_dep3 ul.list {
+    margin-top: 10px;
+}
+.list_dep3 > ul.list > li {
+    margin-top: 4px;
+    float: none;
+}
+.list_dep3 ul.list li a {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'hcR';
+    color: #5c5c5c;
+}
+
+/* 3dep 오른쪽메뉴 */
+.box_dep3_right p.tit_dep3,.login_prev p.login_info {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.box_dep3_right .login_prev {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.box_dep3_right .login_prev .box_btn {
+    margin-top: 23px;
+}
+.box_dep3_right .login_prev .box_btn a {
+    display: inline-block;
+    height: 40px;
+    padding: 9px 7px 9px 8px;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 8px;
+    background: #ebebeb;
+    width: 120px;
+}
+
+/* top banner */
+.box_gnb_banner {
+    position: fixed;
+    top: 80px;
+    left:0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    height: 50px;
+    background: #0070f0;
+    color: #fff;
+}
+.box_gnb_banner .box_gnb_in {
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.box_gnb_banner .box_gnb_in .box_info {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.box_gnb_banner .box_gnb_in .box_info p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+/* 오늘하루창버튼 */
+.box_gnb_banner .box_btn {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.box_gnb_banner .box_btn label {
+    display: block;
+    height: 32px;
+    padding-left: 36px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #fff;
+    background: url(../img/ico_checkbox_off_wht.png) no-repeat 0 50% / 32px;
+}
+.box_btn input[type="checkbox"]:checked +label {
+    background: url(../img/ico_checkbox_on_wht.png) no-repeat 0 50% /32px;
+}
+.box_gnb_banner .box_btn a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(../img/ico_x_o_gry.png) no-repeat 100% 50%;
+    background-size: 32px 32px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600px;
+    color:#fff;
+}
+
+/* 스크롤을 내리면 small클래스가 붙을때 */
+.header.small {
+    height: 48px;
+    min-height: 48px;
+}
+.header.small h1 {
+    width: 174px;
+    height: 48px;
+    background-size: 108px 22px;
+}
+.header.small .list_dep2 {
+    padding-left: 16px;
+}
+.header.small .list_dep2 > li > a {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 11px 12px 10px;
+    font-weight: 600;
+    font-family: "hcR";
+}
+.header.small .list_dep2 > li:last-child::before {
+    top: 15px;
+}
+.header.small .list_etc {
+    opacity: 0;
+    transition: all 0.25s cubic-bezier(.22,.61,.36,1);
+}
+.header.small .box_etc .input_cell_box {
+    float: right;
+    height: 32px;
+    border-color: #ccc;
+}
+.header.small .box_bg {
+    top: 48px;
+}
+.header.small +.box_gnb_banner{
+    top: 48px;
+}
+

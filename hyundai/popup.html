@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+   
+</head>
+<body>
+    <div id="topBannerWrap" class="box_gnb_banner">
+        <div class="box_gnb_in" >
+            <a href="" class="box_info">
+                <p class="txt01">the Red 위에 the Red Stripe, 고성능 럭셔리 카드 출시</p>
+            </a>
+            <div class="box_btn" >
+                <input class="checkbox blind" id="gnbLineBanChk" type="checkbox">
+                <label id="gnbLineBanLabel" for="gnbLineBanChk">오늘 하루 열지 않기</label>
+                <a class="btn_inblock" id="btnTodayClose" href="javascript:closeWin();"><span class="blind">닫기</span></a>
+            </div>
+        </div>
+    </div><!-- id="gnb_banner_wrap" -->
+
+
+    
+    <script type="text/javascript">
+    /* 오늘 하루 이창을 열지 않음  */
+    // 쿠키 가져오기
+    function setCookie( name, value, expirehours ) {
+    var todayDate = new Date();
+    todayDate.setHours( todayDate.getHours() + expirehours );
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+    }
+    function closeWin() {
+    if(document.getElementById("gnbLineBanChk").checked){
+    setCookie( "ncookie", "done" , 24 );
+    }
+    document.getElementById('topBannerWrap').style.display = "none";
+    }
+
+    cookiedata = document.cookie;
+    if (cookiedata.indexOf("ncookie=done") < 0){
+    document.getElementById('topBannerWrap').style.display = "block";
+    
+    } else {
+    document.getElementById('topBannerWrap').style.display = "none";
+    }
+    </script>
+</body>
+</html>

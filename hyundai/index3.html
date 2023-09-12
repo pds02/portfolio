@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyundaiCard</title>
+    <link rel="shortcut icon" href="img/img_favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <script src="https://kit.fontawesome.com/7cf5fd23d0.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/script3.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header" >
+                <h1>
+                    <a href="#"><strong class="blind">Hyundai Card</strong></a>
+                </h1>
+                <ul class="list_dep2">
+                    <li><a href="#">My Acount</a>
+                        <div class="box_bg"><!-- 서브메뉴배경 -->
+                            <div class="box_dep3_in">
+                                <div class="box_dep3_left">
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">이용내역</p>
+                                        <ul class="list">
+                                            <li><a href="#">이용대금명세서</a></li>
+                                            <li><a href="#">카드 이용내역(매출전표조회)</a></li>
+                                            <li><a href="#">카드이용알림서비스</a></li>
+                                            <li><a href="#">금융 이용내역</a></li>
+                                            <li><a href="#">유료상품 가입정보</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">이용대금 결제</p>
+                                        <ul class="list">
+                                            <li><a href="#">즉시결제</a></li>
+                                            <li><a href="#">분할납부</a></li>
+                                            <li><a href="#">결제연기</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">내 카드 관리</p>
+                                        <ul class="list">
+                                            <li><a href="#">내카드 목록</a></li>
+                                            <li><a href="#">카드 비밀번호 설정·변경</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">케어·안심서비스</p>
+                                        <ul class="list">
+                                            <li><a href="#">해외이용제한/해제서비스</a></li>
+                                            <li><a href="#">해외원화결제차단서비스</a></li>
+                                            <li><a href="#">이용내역안내메일서비스</a></li>
+                                            <li><a href="#">카드본인확인서비스</a></li>
+                                            <li><a href="#">케어서비스</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">한도관리</p>
+                                        <ul class="list">
+                                            <li><a href="#">이용한도 조회·변경</a></li>
+                                            <li><a href="#">특별한도 조회·변경</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">생활요금납부서비스</p>
+                                        <ul class="list">
+                                            <li><a href="#">정기결제</a></li>
+                                            <li><a href="#">수시결제</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">결제정보 관리</p>
+                                        <ul class="list">
+                                            <li><a href="#">결제일 조회·변경</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">소득공제 및 서류 환급</p>
+                                        <ul class="list">
+                                            <li><a href="#">소득공제내역</a></li>
+                                            <li><a href="#">입금내역</a></li>
+                                            <li><a href="#">개인사업자 이용내역</a></li>
+                                            <li><a href="#">서류발급</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                </div><!-- //class="box_dep3_left" -->
+
+
+                                <div class="box_dep3_right">
+                                    <p class="tit_dep3">자주 찾는 메뉴</p>
+                                    <div class="login_prev">
+                                        <p class="login_info">
+                                            로그인하면 자주 찾는 메뉴를 <br>
+                                            확인할 수 있습니다.
+                                        </p>
+                                        <div class="box_btn">
+                                            <a href="#"><span class="box_btn_span">로그인</span></a>
+                                        </div>
+                                    </div>
+                                </div><!-- class="box_dep3_rigth" -->
+                            </div><!-- //class="box_dep3_in" -->
+                        </div><!-- //class="box_bg" -->
+                    </li>
+                    <li><a href="#">카드</a>
+                        <div class="box_bg"><!-- 서브메뉴배경 -->
+                            <div class="box_dep3_in">
+                                <div class="box_dep3_left">
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">3층시스템</p>
+                                        <ul class="list">
+                                            <li><a href="#">3층시스템안내</a></li>
+                                            <li><a href="#">2층구독</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">카드안내신청</p>
+                                        <ul class="list">
+                                            <li><a href="#">카드 신청</a></li>
+                                            <li><a href="#">카드파인더</a></li>
+                                            <li><a href="#">바로발급서비스</a></li>
+                                            <li><a href="#">카드 발급 조회</a></li>
+                                            <li><a href="#">카드 수령 등록</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                    <div class="list_dep3">
+                                        <p class="tit_dep3">기타 카드</p>
+                                        <ul class="list">
+                                            <li><a href="#">가족카드</a></li>
+                                            <li><a href="#">Gift카드</a></li>
+                                            <li><a href="#">후불하이패스카드</a></li>
+                                        </ul>
+                                    </div><!-- //class="list_dep3" -->
+                                </div><!-- //class="box_dep3_left" -->
+
+
+                                <div class="box_dep3_right">
+                                    <p class="tit_dep3">자주 찾는 메뉴</p>
+                                    <div class="login_prev">
+                                        <p class="login_info">
+                                            로그인하면 자주 찾는 메뉴를 <br>
+                                            확인할 수 있습니다.
+                                        </p>
+                                        <div class="box_btn">
+                                            <a href="#"><span class="box_btn_span">로그인</span></a>
+                                        </div>
+                                    </div>
+                                </div><!-- class="box_dep3_rigth" -->
+                            </div><!-- //class="box_dep3_in" -->
+                        </div><!-- //class="box_bg" -->
+                    </li>
+                    <li><a href="#">혜택</a></li>
+                    <li><a href="#">금융</a></li>
+                    <li><a href="#">컬쳐</a></li>
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#"><i class="fab fa-apple"></i>Pay</a></li>
+                </ul><!-- //class="list_dep2" -->
+
+                <div class="box_etc">
+                    <ul class="list_etc">
+                        <li><a href="#">개인사업자</a></li>
+                        <li><a href="#">법인</a></li>
+                        <li class="bar"><a href="#">가맹점</a></li>
+                        <li><a href="#">소비자보호</a></li>
+                        <li><a href="#">포털</a></li>
+                        <li><a href="#">상품공시실</a></li>
+                    </ul>
+                    <div class="input_cell_box">
+                        <a href="#">
+                            <strong>카드,메뉴,혜택을 검색해 보세요</strong>
+                        </a>
+                    </div>
+                </div><!-- //class="box_etc" -->
+            </div><!-- //class="header" -->
+
+
+            <div id="topBannerWrap" class="box_gnb_banner" >
+                <div class="box_gnb_in" >
+                    <a href="#" class="box_info">
+                        <p class="txt01">the Red 위에 the Red Stripe, 고성능 럭셔리 카드 출시</p>
+                    </a>
+                    <div class="box_btn">
+                        <input class="checkbox blind" id="gnbLineBanChk" type="checkbox">
+                        <label id="gnbLineBanLabel" for="gnbLineBanChk">오늘 하루 열지 않기</label>
+                        <a class="btn_inblock" id="btnTodayClose" href="javascript:closeWin();"><span class="blind">닫기</span></a>
+                    </div>
+                </div>
+            </div><!-- id="gnb_banner_wrap" -->
+        
+        <script  language="Javascript" type="text/javascript">
+            /* 오늘 하루 이창을 열지 않음  */
+            // 쿠키 가져오기
+            function setCookie( name, value, expirehours ) {
+            var todayDate = new Date();
+            todayDate.setHours( todayDate.getHours() + expirehours );
+            document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+            }
+            function closeWin() {
+            if(document.getElementById('gnbLineBanChk').checked){
+            setCookie( "ncookie", "done" , 24 );
+            }
+            document.getElementById('topBannerWrap').style.display = "none";
+            }
+        
+                cookiedata = document.cookie;
+                if (cookiedata.indexOf("ncookie=done") < 0){
+                document.getElementById('topBannerWrap').style.display = "block";
+                
+                } else {
+                document.getElementById('topBannerWrap').style.display = "none";
+                }
+            </script>
+        
+        </header>
+
+        <div id="container" class="main_container">
+            <div class="content">
+                <section class="left_col">
+                    <article class="visualBanner">
+                        <a href="#" class="prev_btn"><span class="blind">이전슬라이드</span></a>
+                        <a href="#" class="next_btn"><span class="blind">다음 슬라이드</span></a>
+                        <div class="swiper_wrapper">
+                            <div class="swiper_slide">
+                                <ul class="banner_list">
+                                    <li><a href="#"><img src="img/1_1_banner.jpg" alt="배너1"></a></li>
+                                    <li><a href="#"><img src="img/1_2_banner.jpg" alt="배너2"></a></li>
+                                    <li><a href="#"><img src="img/1_3_banner.jpg" alt="배너3"></a></li>
+                                </ul>
+                            </div><!-- 슬라이드1 -->
+                            <div class="swiper_slide">
+                                <ul class="banner_list">
+                                    <li><a href="#"><img src="img/2_1_banner.jpg" alt="배너1"></a></li>
+                                    <li><a href="#"><img src="img/2_2_banner.jpg" alt="배너2"></a></li>
+                                    <li><a href="#"><img src="img/2_3_banner.jpg" alt="배너3"></a></li>
+                                </ul>
+                            </div><!-- 슬라이드2 -->
+                            <div class="swiper_slide">
+                                <ul class="banner_list">
+                                    <li><a href="#"><img src="img/3_1_banner.jpg" alt="배너1"></a></li>
+                                    <li><a href="#"><img src="img/3_2_banner.jpg" alt="배너2"></a></li>
+                                    <li><a href="#"><img src="img/3_3_banner.jpg" alt="배너3"></a></li>
+                                </ul>
+                            </div><!-- 슬라이드3 -->
+                            <div class="swiper_slide">
+                                <ul class="banner_list">
+                                    <li><a href="#"><img src="img/4_1_banner.jpg" alt="배너1"></a></li>
+                                    <li><a href="#"><img src="img/4_2_banner.jpg" alt="배너2"></a></li>
+                                    <li><a href="#"><img src="img/4_3_banner.jpg" alt="배너3"></a></li>
+                                </ul>
+                            </div><!-- 슬라이드4 -->
+                            <div class="swiper_slide">
+                                <ul class="banner_list">
+                                    <li><a href="#"><img src="img/5_1_banner.jpg" alt="배너1"></a></li>
+                                    <li><a href="#"><img src="img/5_2_banner.jpg" alt="배너2"></a></li>
+                                    <li><a href="#"><img src="img/5_3_banner.jpg" alt="배너3"></a></li>
+                                </ul>
+                            </div><!-- 슬라이드5 -->
+                            <div class="swiper_slide">
+                                <ul class="banner_list">
+                                    <li><a href="#"><img src="img/6_1_banner.jpg" alt="배너1"></a></li>
+                                    <li><a href="#"><img src="img/6_2_banner.jpg" alt="배너2"></a></li>
+                                    <li><a href="#"><img src="img/6_3_banner.jpg" alt="배너3"></a></li>
+                                </ul>
+                            </div><!-- 슬라이드6 -->
+                            <div class="swiper_slide">
+                                <ul class="banner_list">
+                                    <li><a href="#"><img src="img/7_1_banner.jpg" alt="배너1"></a></li>
+                                    <li><a href="#"><img src="img/7_2_banner.jpg" alt="배너2"></a></li>
+                                    <li><a href="#"><img src="img/7_3_banner.jpg" alt="배너3"></a></li>
+                                </ul>
+                            </div><!-- 슬라이드7 -->
+                            <div class="swiper_slide">
+                                <ul class="banner_list">
+                                    <li><a href="#"><img src="img/1_1_banner.jpg" alt="배너1"></a></li>
+                                    <li><a href="#"><img src="img/1_2_banner.jpg" alt="배너2"></a></li>
+                                    <li><a href="#"><img src="img/1_3_banner.jpg" alt="배너3"></a></li>
+                                </ul>
+                            </div><!-- 슬라이드1 -->
+                        </div><!-- //class="swiper_wrapper" -->
+                        <div class="pignation_wrap">
+                            <button class="auto_btn"><span class="blind">일시정지</span></button>
+                            <ul class="pignation">
+                                <li class="pignation-bullet on"></li>
+                                <li class="pignation-bullet"></li>
+                                <li class="pignation-bullet"></li>
+                                <li class="pignation-bullet"></li>
+                                <li class="pignation-bullet"></li>
+                                <li class="pignation-bullet"></li>
+                                <li class="pignation-bullet"></li>
+                            </ul>
+                        </div>
+                    </article><!-- //class="visualBanner" -->
+
+
+
+                    <article class="card_plate">
+                        <div class="card_info">
+                            <h2>Hyundai<br>Originals</h2>
+                            <p class="card_desc">
+                                <span>현대카드의 오리지널리티를 담은 <br> 진정한 현대카드 </span>
+                                <a href="#" class="btn_detail">전체보기</a>
+                            </p>
+
+                            <ul class="tag_list">
+                                <li><a href="#">#프리미엄</a></li>
+                                <li><a href="#">#쓸 때마다 할인</a></li>
+                                <li><a href="#">#어디서나 포인트 적립</a></li>
+                                <li><a href="#">#3F 시스템 혜택</a></li>
+                            </ul>
+                        </div>
+                        <ul class="card_list">
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate1.png" alt="card1">
+                                    <span class="card_name">the Purple osee</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate2.png" alt="card2">
+                                    <span class="card_name">the Red Stripe</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate3.png" alt="card3">
+                                    <span class="card_name">the Red Edition5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate4.png" alt="card4">
+                                    <span class="card_name">the Green Edition2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate5.png" alt="card5">
+                                    <span class="card_name">the Pink</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate6.png" alt="card6">
+                                    <span class="card_name">M BOOST</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate7.png" alt="card7">
+                                    <span class="card_name">X BOOST</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate8.png" alt="card8">
+                                    <span class="card_name">ZERO Edition2<br>(할인형)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article><!-- //class="card_plate" -->
+
+
+
+                     <article class="card_plate">
+                        <div class="card_info">
+                            <h2>Chapion<br>Brands</h2>
+                            <p class="card_desc">
+                                <span>최고의 브랜드와 콜라보한 <br>또 하나의 현대카드 </span>
+                                <a href="#" class="btn_detail">전체보기</a>
+                            </p>
+
+                            <ul class="tag_list">
+                                <li><a href="#">#현대자동차</a></li>
+                                <li><a href="#">#기아</a></li>
+                                <li><a href="#">#이마트</a></li>
+                                <li><a href="#">#제네시스</a></li>
+                            </ul>
+                        </div>
+                        <ul class="card_list">
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate9.png" alt="card9">
+                                    <span class="card_name">SSG.COM카드 Edition</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate10.png" alt="card10">
+                                    <span class="card_name">넥슨 현대카드</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate11.png" alt="card11">
+                                    <span class="card_name">에너지플러스카드 Edition2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate12.png" alt="card12>
+                                    <span class="card_name">네이버 현대카드</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate13.png" alt="card13">
+                                    <span class="card_name">대한항공카드 150</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate14.png" alt="card14">
+                                    <span class="card_name">스타벅스 현대카드</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate15.png" alt="card15">
+                                    <span class="card_name">SmileCard Edition2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/card_plate16.png" alt="card16">
+                                    <span class="card_name">코스트코 리워드<br>(할인형)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </article><!-- //class="card_plate" -->
+
+
+                    <article class="main_content">
+                        <ul class="grid_list">
+                            <li class="grid_item">
+                                <a href="#">
+                                    <div class="grid_image"></div>
+                                    <p>현대자동차·기아 전용카드<br>신차 구매 혜택</p>
+                                </a>
+                            </li>
+                            <li class="grid_item">
+                                <a href="#">
+                                    <div class="grid_image"></div>
+                                    <p>대학 ·대학원 등록금 납부 시 <br>무이자 할부 ·부분 무이자 할부</p>
+                                </a>
+                            </li>
+                            <li class="grid_item">
+                                <a href="#">
+                                    <div class="grid_image"></div>
+                                    <p>CASPER 전용카드만의<br>특별한 혜택</p>
+                                </a>
+                            </li>
+                            <li class="grid_item">
+                                <a href="#">
+                                    <div class="grid_image"></div>
+                                    <p>모바일 쿠폰으로<br>더 편리해진 M포인트</p>
+                                </a>
+                            </li>
+                            <li class="grid_item">
+                                <a href="#">
+                                    <div class="grid_image"></div>
+                                    <p>현대홈쇼핑 현대카드<br>최대 4만원 즉시 할인 이벤트</p>
+                                </a>
+                            </li>
+                            <li class="grid_item">
+                                <a href="#">
+                                    <div class="grid_image"></div>
+                                    <p>네이버 현대카드 이용하고<br>1만원 캐시백 받기</p>
+                                </a>
+                            </li>
+                            <li class="grid_item">
+                                <a href="#">
+                                    <div class="grid_image"></div>
+                                    <p>쏘카카드로 최대 9만원 혜택<br>봄나들이 다녀오세요.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="right_col">
+                    <div class="right_content">
+                        <!-- 로그인탭 -->
+                        <article class="main_login">
+                            <div class="right_head">
+                                <h3>로그인</h3>
+                                <a href="#">다른 로그인 방법</a>
+                            </div>
+                            <ul class="box_login_tab">
+                                <li class="active"><a href="#">간편번호</a></li>
+                                <li><a href="#">현대카드 앱</a></li>
+                            </ul>
+                            <ul class="login_tab_content">
+                                <!-- 간편번호 -->
+                                <div class="login_method pin">
+                                    <div class="pin_area">
+                                        <p>현대카드 홈페이지 간편번호<br>6자리를 설정해주세요.</p>
+                                        <div class="login_pin_number">
+                                            <input type="password" class="bg_pin" readonly value="******">
+                                            <input type="password" class="pin" value="" maxlength="6" id="PinNumerConfirm">
+                                        </div>
+                                        <div class="bottom_login">
+                                            <a href="#"><span>간편번호등록</span></a>
+                                        </div>
+                                        <div class="join_btm">
+                                            <a href="#"><span>회원가입</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- QR코드 -->
+                                <div class="login_method qr_code">
+                                    <p id="clock_des">
+                                        현대카드 앱 실행 후 '앱카드메뉴'에서 <br> QR코드 스캔 또는 숫자코드 입력을 <br> 선택해 주세요.
+                                    </p>
+                                    <p class="app_time" id="clock"></p>
+
+                                    <!-- 남은시간 스크립트 -->
+                                    <script>
+                                        // 3분(180초)을 나타내는 변수
+                                 var duration = 180;
+                                 
+                                 // 시작 시간을 현재 시간으로 설정
+                                 var startTime = new Date().getTime();
+                                 
+                                 // 시계 업데이트 함수
+                                 function updateClock() {
+                                   // 현재 시간을 가져옴
+                                   var currentTime = new Date().getTime();
+                                 
+                                   // 경과 시간을 계산
+                                   var elapsedTime = Math.floor((currentTime - startTime) / 1000);
+                                 
+                                   // 남은 시간을 계산
+                                   var remainingTime = duration - elapsedTime;
+                                 
+                                   // 남은 시간이 0보다 크거나 같을 경우 시, 분, 초를 계산
+                                   if (remainingTime >= 0) {
+                                     var minutes = Math.floor(remainingTime / 60);
+                                     var seconds = remainingTime % 60;
+                                 
+                                     // 시, 분, 초를 2자리 숫자 형식으로 변환
+                                     var formattedMinutes = ("0" + minutes).slice(-2);
+                                     var formattedSeconds = ("0" + seconds).slice(-2);
+                                 
+                                     // 시계 표시 엘리먼트를 찾음 (예: <span id="clock"></span>)
+                                     var clockElement = document.getElementById("clock");
+                                 
+                                     // 시계를 업데이트
+                                     clockElement.innerHTML = formattedMinutes + ":" + formattedSeconds;
+                                   } else {
+                                     // 3분이 지난 경우 시계를 멈춤
+                                     clearInterval(clockInterval);
+                                     document.getElementById('clock_des').innerHTML='세션이 지났습니다. 새로고침하시오'
+                                   }
+                                 }
+                                 
+                                 // 1초마다 시계 업데이트 함수를 호출하여 시계를 업데이트
+                                 var clockInterval = setInterval(updateClock, 1000);
+                                 
+                                     </script>
+                                     <div class="qr_code">
+                                        <img src="img/qrcode.png" alt="qr_code">
+                                     </div>
+                                     <div class="bottom_login">
+                                        <div class="down_app"><a href="#">앱다운로드</a></div>
+                                        <div class="join_btm"><a href="#">회원가입</a></div>
+                                     </div>
+                                </div>
+                            </ul>
+                        </article>
+
+                        <!-- 퀵메뉴 -->
+                        <article class="quick_menu">
+                            <a href="#"><img src="img/quick_menu1.png" alt="quick1"><span>고객지원</span></a>
+                            <a href="#"><img src="img/quick_menu2.png" alt="quick2"><span>상담문의</span></a>
+                            <a href="#"><img src="img/quick_menu3.png" alt="quick3"><span>도난분실</span></a>
+                        </article>
+
+                        <!-- 금융 -->
+                        <article class="fin_info">
+                            <div class="fin_head title_head"><a href="#">금융</a></div>
+                            <div class="box_fin_list">
+                                <ul class="fin_list">
+                                    <li>
+                                        <a href="#" class="fin_in">
+                                            <strong>장기카드대출(카드론)</strong>
+                                            <p>목돈이 필요할 때</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fin_in">
+                                            <strong>단기카드대출(현금서비스)</strong>
+                                            <p>일상에서 현금이 필요할 때</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fin_in">
+                                            <strong>일부결제금액이월약정(리볼빙)</strong>
+                                            <p>카드대금이 부담될 때</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <!-- 뉴스공지사항 -->
+                        <article class="notice">
+                            <div class="notice_head title_head">
+                                <a href="#">뉴스 · 공지사항</a>
+                            </div>
+                            <ul class="notice_list">
+                                <li>
+                                    <a href="#">
+                                        <span>2층 구독 쇼핑부스터팩 운영 종료</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>대출 갈아타기(대환대출 서비스) 온라인 이용 방법 안내</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>시스템 점검으로 인한 서비스 일시 제한 안내</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>단기카드대출(현금서비스)및 일부결제금액이월약정(리볼빙) 이자율 변경 안내</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>현금카드 금융퀴즈대항전 참가 신청</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <!-- app 슬라이더 -->
+                        <article class="app_store">
+                            <ul class="swiper_wrapper">
+                                <li class="swiper_slide">
+                                <a href="#">
+                                    <span class="app_thum">
+                                        <img src="img/app1.png" alt="현대카드앱">
+                                    </span>
+                                    <span class="app_desc">같은 맑음이라도 <br> 해석이 다른 날씨 앱</span>
+                                </a>
+                                </li>
+                                <li class="swiper_slide">
+                                <a href="#">
+                                    <span class="app_thum">
+                                        <img src="img/app2.png" alt="현대카드앱">
+                                    </span>
+                                    <span class="app_desc">카드생활의 모든것을 <br> 단 하나의 앱으로</span>
+                                </a>
+                                </li>
+                                <li class="swiper_slide">
+                                <a href="#">
+                                    <span class="app_thum">
+                                        <img src="img/app3.png" alt="현대카드앱">
+                                    </span>
+                                    <span class="app_desc">놀면 놀수록 빠져드는 <br> 컬쳐앱</span>
+                                </a>
+                                </li>
+                                <li class="swiper_slide">
+                                <a href="#">
+                                    <span class="app_thum">
+                                        <img src="img/app4.png" alt="현대카드앱">
+                                    </span>
+                                    <span class="app_desc">당신의 취향을 저격하는 <br> 포인트 쇼핑</span>
+                                </a>
+                                </li>
+                                <li class="swiper_slide">
+                                <a href="#">
+                                    <span class="app_thum">
+                                        <img src="img/app1.png" alt="현대카드앱">
+                                    </span>
+                                    <span class="app_desc">같은 맑음이라도 <br> 해석이 다른 날씨 앱</span>
+                                </a>
+                                </li>
+                            </ul>
+                            <div class="pignation_wrap">
+                                <button class="auto_btn">
+                                    <span class="blind">일시정지</span>
+                                </button>
+                                <ul class="pignation">
+                                    <li class="pignation-bullet on"></li>
+                                    <li class="pignation-bullet"></li>
+                                    <li class="pignation-bullet"></li>
+                                    <li class="pignation-bullet"></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
