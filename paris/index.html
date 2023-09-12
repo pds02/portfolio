@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파리바게트</title>
+    <link rel="icon" href="img/favicon_32.png">
+    <!-- 애플용 홈화면에 추가 :180*180 -->
+    <link rel="apple-touch-icon" href="img/favicon_180.png">
+    <!-- 안드로이드용 홈화면에 추가 :192*192 -->
+    <link rel="icon" href="img/favicon_192.png">
+    <!-- css파일 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.hamberger').click(function(){
+                $('.mobile_nav').addClass('active');
+                $('.mobile_gnb').css({opacity:0}).animate({left:0,opacity:1},300);
+
+            })
+            $('.close').click(function(){
+                $('.mobile_nav').removeClass('active');
+                $('.mobile_gnb').animate({left:-280,opacity:0},300);
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="#">PARIS BAGUETTE</a>
+                </h1>
+                <div id="gnb">
+                    <nav class="left">
+                        <ul class="nav">
+                            <li><a href="#">파바의 약속</a></li>
+                            <li><a href="#">파바 매거진</a></li>
+                            <li><a href="#">파바 스토리</a></li>
+                            <li><a href="#">상품안내</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="right">
+                        <ul class="nav">
+                            <li><a href="#">매장정보</a></li>
+                            <li><a href="#">주문정보</a></li>
+                            <li><a href="#">프로모션</a></li>
+                        </ul>
+                        <a href="#" class="btn_search">검색</a>
+                    </nav>
+                </div>
+                <!-- 모바일 메뉴 -->
+                <div class="hamberger"></div>
+                <div class="mobile_nav">
+                    <div class="mobile_gnb">
+                        <div class="nav_top">
+                            <img src="img/close.svg" alt="close" class="close">
+                        </div>
+                        <nav class="left">
+                            <ul>
+                                <li><a href="#">파바의 약속</a></li>
+                                <li><a href="#">파바 매거진</a></li>
+                                <li><a href="#">파바 스토리</a></li>
+                                <li><a href="#">상품안내</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="right">
+                            <ul>
+                                <li><a href="#">매장정보</a></li>
+                                <li><a href="#">주문정보</a></li>
+                                <li><a href="#">프로모션</a></li>
+                            </ul>
+                        </nav>
+                        <div class="follow_us">
+                            <h4>Follow Us</h4>
+                            <a href="#"><img src="img/sns_ico_01.svg" alt="sns1"></a>
+                            <a href="#"><img src="img/sns_ico_02.svg" alt="sns2"></a>
+                            <a href="#"><img src="img/sns_ico_03.svg" alt="sns3"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //class="mobile_nav" -->
+            </div>
+        </header>
+        <!-- //id="header" -->
+        <div id="main_visual">
+            <div class="container">
+                메인배너
+            </div>
+        </div>
+        <!-- //id="main_visual" -->
+
+        <section id="content">
+            <aside id="promotion" class="col-p-01 col-t-01 col-m-04">
+                <h2>PB PROMOTION</h2>
+                <ul>
+                    <li>
+                        <div class="pro_img">
+                            <a href="#">
+                                <img src="img/promotion1.jpg" alt="프로모션1">
+                                <span class="btn_more">진행중</span>
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="post_title">
+                                <a href="#">
+                                    <strong>Apple pay 1만원 이상 결제시 10% 캐시백</strong>
+                                </a>
+                            </div>
+                            <span class="readmore"><a href="#">READ MORE</a></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro_img">
+                            <a href="#">
+                                <img src="img/promotion2.jpg" alt="프로모션2">
+                                <span class="btn_more">진행중</span>
+                            </a>
+                        </div>
+                        <!-- 이모티콘 넣기 : 윈도우 + . -->
+                        <div class="desc">
+                            <div class="post_title">
+                                <a href="#">
+                                    <strong>블루베리듬뿍 롤케익 증정💕🌹</strong>
+                                </a>
+                            </div>
+                            <span class="readmore"><a href="#">READ MORE</a></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro_img">
+                            <a href="#">
+                                <img src="img/promotion3.jpg" alt="프로모션3">
+                                <span class="btn_more">진행중</span>
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="post_title">
+                                <a href="#">
+                                    <strong>춘식이 런치쿨러백 사전예약👍</strong>
+                                </a>
+                            </div>
+                            <span class="readmore"><a href="#">READ MORE</a></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro_img">
+                            <a href="#">
+                                <img src="img/promotion4.jpg" alt="프로모션4">
+                                <span class="btn_more">예정</span>
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="post_title">
+                                <a href="#">
+                                    <strong>달콤 부드러운 옥수수크림빵 제품 4종🌽</strong>
+                                </a>
+                            </div>
+                            <span class="readmore"><a href="#">READ MORE</a></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pro_img">
+                            <a href="#">
+                                <img src="img/promotion5.jpg" alt="프로모션5">
+                                <span class="btn_more">예정</span>
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="post_title">
+                                <a href="#">
+                                    <strong>파바와 장수막걸리의 Cool한 콜라보🥛</strong>
+                                </a>
+                            </div>
+                            <span class="readmore"><a href="#">READ MORE</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <!-- //id="promotion" -->
+
+            <main id="main" class="col-p-02 col-t-03 col-m-04">
+                <div id="product">
+                    <h2>PB PRODUCT <a href="#" class="btn_detail">SHOW MORE</a></h2>
+                    <div class="now"> 5월 파리바게트가 전하는 '이달의 신제품', NEW ARRIVIAL</div>
+                    <ul>
+                        <li><a href="#"><img src="img/list_product_01.png" alt="제품1"></a><span>베이글</span></li>
+                        <li><a href="#"><img src="img/list_product_02.png" alt="제품2"></a><span>토스트</span></li>
+                        <li><a href="#"><img src="img/list_product_03.png" alt="제품3"></a><span>포테이토넛</span></li>
+                        <li><a href="#"><img src="img/list_product_04.png" alt="제품4"></a><span>옥수스크림빵</span></li>
+                        <li><a href="#"><img src="img/list_product_05.png" alt="제품5"></a><span>옥수수크림샌드</span></li>
+                        <li><a href="#"><img src="img/list_product_06.png" alt="제품6"></a><span>크림번</span></li>
+                        <li><a href="#"><img src="img/list_product_07.png" alt="제품7"></a><span>블루베리페스츄리</span></li>
+                        <li><a href="#"><img src="img/list_product_08.png" alt="제품8"></a><span>쇼콜라케이크</span></li>
+                        <li><a href="#"><img src="img/list_product_09.png" alt="제품9"></a><span>장미빛케이크</span></li>
+                        <li><a href="#"><img src="img/list_product_10.png" alt="제품10"></a><span>달리아케이크</span></li>
+                        <li><a href="#"><img src="img/list_product_11.png" alt="제품11"></a><span>중장비케이크</span></li>
+                        <li><a href="#"><img src="img/list_product_12.png" alt="제품12"></a><span>바스크토스트</span></li>
+                        <li><a href="#"><img src="img/list_product_13.png" alt="제품13"></a><span>치즈소시지</span></li>
+                        <li><a href="#"><img src="img/list_product_14.png" alt="제품14"></a><span>초당옥수수빵</span></li>
+                        <li><a href="#"><img src="img/list_product_15.png" alt="제품15"></a><span>오미자빵</span></li>
+                        <li><a href="#"><img src="img/list_product_16.png" alt="제품16"></a><span>참쑥빵</span></li>
+                        <li><a href="#"><img src="img/list_product_17.png" alt="제품17"></a><span>장수아이스캔디</span></li>
+                        <li><a href="#"><img src="img/list_product_18.png" alt="제품18"></a><span>그릭아이스캔디</span></li>
+                    </ul>
+                </div>
+                <!-- //id="product" -->
+
+                <div id="pb_megazine">
+                    <h2>PB MEGAZINE
+                        <a href="#" class="btn_detail">SHOW MORE</a>
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="img">
+                                    <img src="img/pb_megazine1.png" alt="논산딸기">
+                                </div>
+                                <div class="desc">
+                                    <h3>논산딸기</h3>
+                                    <p>논산딸기 농가와 함께한 모두가 행복한 행복상생 프로젝트</p>
+                            
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img">
+                                    <img src="img/pb_megazine2.png" alt="문경오미자">
+                                </div>
+                                <div class="desc">
+                                    <h3>문경오미자</h3>
+                                    <p>문경 오미자 농가와 함께한 모두가 행복한 행복상생 프로젝트</p>
+                            
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img">
+                                    <img src="img/pb_megazine3.png" alt="경산대추">
+                                </div>
+                                <div class="desc">
+                                    <h3>경산대추</h3>
+                                    <p>경산 대추 농가와 함께한 모두가 행복한 행복상생 프로젝트</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //id="pb_megazine" -->
+                
+                <div id="pb_story">
+                    <h2>PB STORY
+                        <a href="#" class="btn_detail">SHOW MORE</a>
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="img">
+                                    <img src="img/pb_story1.png" alt="치즈타르트">
+                                </div>
+                            </a>
+                            <div class="desc">
+                                <h3>폼 미쳤다🧡생글탱글 과일가득 프리미엄 치즈타르트</h3>
+                                <p>타르트 달콤상큼한 과일과 풍미가득 크림치즈! 폼제대로 오른 프리미엄 치즈 타르트의 등장!</p>
+                                <div class="date">2023-06-05</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img">
+                                    <img src="img/pb_story2.png" alt="벨리곰">
+                                </div>
+                            </a>
+                            <div class="desc">
+                                <h3>파라바게트에 벨기롬이 떴다!🧸</h3>
+                                <p>벨리콤 케이크가 나왔다? 소식 듣고 찾아온 벨리곰 귀여움 한도초과 랩 오브 파리바게뜨 습격현장🎀</p>
+                                <div class="date">2023-06-05</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //id="pb_stroy" -->
+            </main>
+            <aside id="pb_event" class="col-p-01 col-t-01 col-m-04">
+                <h2>PB EVENT</h2>
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/bn_rwd_01.png" alt="배너1"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/bn_rwd_02.png" alt="배너2"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/bn_rwd_03.png" alt="배너3"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/bn_rwd_04.png" alt="배너4"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/bn_rwd_05.png" alt="배너5"></a>
+                    </li>
+
+                </ul>
+            </aside>
+        </section>
+        <!-- //id="content" -->
+
+
+        <footer id="footer">
+            <div class="container">
+                <div id="foot_logo" class="col-p-01 col-t-01 col-m-04">
+                    <a href="#">PARIS BAGUETTE</a>
+                </div>
+                <div id="foot_area" class="col-p-02 col-t-03 col-m-04">
+                    <ul class="foot_menu">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><strong>개인정보취급 방침</strong></a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">영상정보처리기기운영관리방침</a></li>
+                    </ul>
+                    <div class="foot_copy">
+                        <span>All Rights Reserved &copy; PARIS BAGUETTE, PARIS CROISSANT co., LTD. </span>
+                        <span>경기도 성남시 중원구 사기막골로 31번길 18 (주) 파리크라상</span>
+                    </div>
+                </div>
+                <div id="right_area" class="col-p-01"></div>
+            </div>
+        </footer>
+        <!-- // id="footer" -->
+    </div>
+</body>
+</html>
