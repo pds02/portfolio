@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 @font-face { font-family: 'godoRounded R';src: url(../font/godoRoundedR.ttf);}
 @font-face { font-family: 'Rock 3D Regular';src: url(../font/Rock3D-Regular.ttf);}
-@font-face { font-family: '평창체';src: url(../font/PyeongChang-Regular.ttf);}
+@font-face { font-family: 'PyeongChang';src: url(../font/PyeongChang-Regular.ttf);}
 *{margin: 0;padding: 0;}
 ul,li,ol {list-style: none;}
 a{text-decoration: none; color: #333;}
@@ -100,7 +100,7 @@ h4 img {
     display: inline;
     width: 100%;
     text-align: center;
-    font-family: '평창체';
+    font-family: 'PyeongChang';
     font-size: 90px;
     color: #fff;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.8);
@@ -219,7 +219,7 @@ body {
     width: 150px;
     height: 35px;
     margin-top: 5px;
-    font-family: '평창체';
+    font-family: 'PyeongChang';
     font-weight: bold;
     color: #999;
 }
@@ -232,7 +232,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
-    font-family: '평창체';
+    font-family: 'PyeongChang';
     font-weight: bold;
 }
 .web .left p {
